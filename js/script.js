@@ -1,16 +1,12 @@
 let image = 'upload-file.png';
 
-let imgUrl = 'img/'+ image;
-
 const imgTag = document.getElementById('imgTag');
 
-imgTag.src = imgUrl;
+imgTag.src = 'img/' + image;
 
 const inputButton = document.getElementById('myInputImg');
 
-inputButton.addEventListener('click', 
-    function() {
-        let imageChange = inputButton.value;
-        console.log('imageChange', imageChange);
-    }
-);
+inputButton.onchange = () => {
+    const selectedFile = inputButton.files[0];
+    imgTag.src = 'img/' + selectedFile.name;
+}
