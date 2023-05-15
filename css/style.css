@@ -16,11 +16,13 @@ body {
 
 .img-container {
     height: 300px;
+    width: fit-content;
     position: relative;
     border: 2px solid black;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
+    margin: 0 auto 20px;
 }
 
 img {
@@ -37,10 +39,17 @@ img {
     cursor: pointer;
 }
 
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .input-couple {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
 }
 
 .input-couple > label {
@@ -49,4 +58,9 @@ img {
 
 .disappear {
     display: none;
+}
+
+#blur,
+#hue-rotate {
+    width: 129px;
 }
