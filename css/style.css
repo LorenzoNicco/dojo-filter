@@ -52,12 +52,16 @@ img {
     padding: 0 10px;
 }
 
-.input-couple > label {
-    cursor: pointer;
+.input-couple > input {
+    display: none;
 }
 
-.disappear {
-    display: none;
+.input-couple:hover > input {
+    display: block;
+}
+
+.input-couple > label {
+    cursor: pointer;
 }
 
 #blur,
